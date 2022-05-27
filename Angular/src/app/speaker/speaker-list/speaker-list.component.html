@@ -1,0 +1,35 @@
+<table class="table bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>UserName</th>
+            <th>PassWord</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Building</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let spk of spks">
+            <td >{{spk._id}}</td>
+            <td >{{spk.ID}}</td>
+            <td>{{spk.Email}}</td>
+            <td>{{spk.UserName}}</td>
+            <td>{{spk.Password}}</td>
+            <td>{{spk.City}}</td>
+            <td>{{spk.Street}}</td>
+            <td>{{spk.Building}}</td>
+            <td>
+                <a [routerLink]="['/Speakers/Details',spk._id]" class="btn btn-success">Details</a>
+                <a [routerLink]="['/Speakers/Update',spk._id]" class="btn btn-primary">Update</a>
+                <a [routerLink]="['/Speakers/Delete',spk._id]" class="btn btn-danger">Delete</a>
+            </td>
+            
+        </tr>
+
+    </tbody>
+</table>
+

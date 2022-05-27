@@ -1,0 +1,36 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-6">
+            
+            <div class="card">
+                <div >
+                    <h1 class="text-center">Sign Up</h1>
+
+                    <div>
+                        
+                            
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input  class="form-control"  >
+                                  </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input [(ngModel)]="std.Email" class="form-control" >
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input [(ngModel)]="std.Password" type="password" class="form-control" >
+                                </div>
+                               
+
+                                <button (click)="Save()" class="btn btn-primary">Submit</button>
+                              
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,24 @@
+<table class="table bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>PassWord</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let std of stds">
+            <td >{{std._id}}</td>
+            <td>{{std.Email}}</td>
+            <td>{{std.Password}}</td>
+            <td>
+                <a [routerLink]="['/Students/Details',std._id]" class="btn btn-success">Details</a>
+                <a [routerLink]="['/Students/Update',std._id]" class="btn btn-primary">Update</a>
+                <a [routerLink]="['/Students/Delete',std._id]" class="btn btn-danger">Delete</a>
+            </td>
+            
+        </tr>
+
+    </tbody>
+</table>

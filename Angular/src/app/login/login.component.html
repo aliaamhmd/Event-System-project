@@ -1,0 +1,32 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-6">
+            
+            <div class="card">
+                <div >
+                    <h1 class="text-center">Log IN</h1>
+
+                    <div>
+
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" [(ngModel)]="logdata.Email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input type="password" class="form-control" [(ngModel)]="logdata.Password">
+                                  <a  routerLink="/stdSignUp">NewUser?SignUp As Student</a>
+                                  <a  routerLink="/spkSignUp">NewUser?SignUp As Speaker</a>
+                                </div>
+                                
+                            
+
+                                <button (click)="Login()" class="btn btn-primary">Login</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

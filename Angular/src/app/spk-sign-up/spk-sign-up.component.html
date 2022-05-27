@@ -1,0 +1,55 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-6">
+            
+            <div class="card">
+                <div >
+                    <h1 class="text-center">Sign Up</h1>
+
+                    <div>
+                        
+                            
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input  class="form-control"  >
+                                  </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input [(ngModel)]="spk.Email" class="form-control" >
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <input [(ngModel)]="spk.Password" type="password" class="form-control" >
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">User Name</label>
+                                    <input [(ngModel)]="spk.UserName" class="form-control" >
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">City</label>
+                                    <input [(ngModel)]="spk.City" class="form-control" >
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Street</label>
+                                    <input [(ngModel)]="spk.Street" class="form-control" >
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Building</label>
+                                    <input [(ngModel)]="spk.Building" class="form-control" >
+                                  </div>
+                               
+
+                                <button (click)="Save()" class="btn btn-primary">Submit</button>
+                              
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
